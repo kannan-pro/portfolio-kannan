@@ -45,6 +45,7 @@
 // export default Hero
 import React from 'react'
 import { motion } from 'framer-motion'
+import { FaInstagram } from "react-icons/fa";
 import heroImg from '../assets/Design uten navn.png'
 import twitterLight from '../assets/twitter-light.svg'
 import githubLight from '../assets/github-light.svg'
@@ -91,10 +92,31 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex gap-4 justify-center my-3">
-          <img src={twitterLight} alt="" className="w-10" />
-          <img src={githubLight} alt="" className="w-10" />
-          <img src={linkedinLight} alt="" className="w-10" />
+          <a
+            href="https://www.instagram.com/_.ambivert_boy._/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram size={38} />
+          </a>
+
+          <a
+            href="https://github.com/kannan-pro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={githubLight} alt="GitHub" className="w-10" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/kannan-r-587606366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedinLight} alt="LinkedIn" className="w-10" />
+          </a>
         </div>
+
         <div className="my-3 text-gray-700 text-lg sm:text-xl w-full sm:w-[320px]">
           <p>
             Passionate React developer building interactive, user-friendly web
